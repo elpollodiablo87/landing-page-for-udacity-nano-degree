@@ -64,31 +64,30 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
-
 .navbar__menu ul {
     padding-left: 0;
-    margin: .5em;
-    text-align: left;
+    margin: 0;
+    
 }
 
 .navbar__menu li {
     display: inline-block;
-    margin-right: 1em;
+    margin: .5em;
 }
-li a {
-    text-decoration: none;
-    color: grey;
-}
-li a:hover {
-    border-bottom: .3em solid steelblue;
-}
-/*media query to make nav menu vertical on smaller screens*/
-@media only screen and (max-width: 600px) {
+/* diplaying vertical menu for small screens */
+@media only screen and (max-width: 600px){
     .navbar__menu li {
         display: block;
-        
     }
-
+    }
+}
+.navbar__menu a:hover {
+    color:tomato;
+    border-bottom: 3px solid orange;
+}
+.navbar__menu a {
+    text-decoration: none;
+    color: teal;
 }
 
 .navbar__menu .menu__link {
